@@ -9,11 +9,16 @@ body {
   color: #39a6b2;
   font-family: Helvetica, Arial, sans-serif;
 }
+/* applies to both header and hero */
+.lander {
+  background-image: url(../images/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  }
 
 /* apply styles to <header> */
 header {
   padding: 20px 35px;
-  background-color: #39a6b2;
 }
 
 header h1 {
@@ -72,18 +77,39 @@ section {
 
 /* Hero Style Start */
 .hero {
-  background-image: url('../images/hero-bg.jpg');
   height: 600px;
-  background-size: cover;
-  background-position: center;
   position: relative;
 }
 /* Hero Style End */
+
+.hero-text {
+  width: 500px;
+  border: red solid 4px;
+  overflow: auto;
+}
+
+.hero-text h2 {
+  color: #fce138;
+  font-size: 42px;
+  font-style: italic;
+  text-align: right;
+  width: 70%;
+  border: red solid 4px;
+  float: right;
+}
+
+.hero-text article {
+  color: white;
+  text-align: right;
+  float: right;
+}
+
 
 .hero-form {
   border: 3px solid #024e76;
   background-color: #fce138;
   padding: 20px;
+  border-radius: 15px;
   width: 500px;
   color: #024e76;
   position: absolute;
@@ -101,6 +127,7 @@ section {
 
 .form-input {
   border: 1px solid #024e76;
+  border-radius: 5px;
   display: block;
   padding: 7px 15px;
   font-size: 16px;
@@ -118,6 +145,7 @@ section {
   background-color: #024e76;
   border: none;
   padding: 10px 20px;
+  border-radius: 5px;
   font-size: 16px;
 }
 
