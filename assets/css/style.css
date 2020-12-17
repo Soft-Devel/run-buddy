@@ -33,7 +33,7 @@ header a {
 }
 
 header nav {
-margin: 7px 0;
+  margin: 7px 0;
 }
 
 header nav ul {
@@ -45,7 +45,7 @@ header nav ul {
 }
 
 header nav ul li a {
-  margin: 0 30px;
+  padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
 }
@@ -58,10 +58,10 @@ header nav ul li a {
 footer {
   background: #fce138;
   padding: 40px 35px;
-  width: 100%;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 footer h2 {
@@ -93,6 +93,7 @@ section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .hero-cta {
@@ -101,7 +102,7 @@ section {
   margin: 3.5%;
   color: #fff;
   font-size: 18px;
-  line-height: 1.3;
+  line-height: 1.2;
 }
 
 .hero-cta h2 {
@@ -159,7 +160,7 @@ section {
   padding-bottom: 20px;
   text-align: center;
   margin: 0 auto 35px auto;
-  width:50%;
+  width: 50%;
 }
 
 .primary-border {
@@ -203,7 +204,7 @@ section {
 .step h3 {
   color: #024e76;
   font-size: 46px;
-  flex: 1 30%
+  flex: 1 30%;
 }
 
 .step-info {
@@ -230,7 +231,7 @@ section {
   color: #39a6b2;
   font-size: 18px;
 }
-  
+
 .step-text h4 {
   font-size: 26px;
   line-height: 1.5;
@@ -250,9 +251,9 @@ section {
 
 .trainer {
   margin: 20px;
+  flex: 1;
   background: #024e76;
   color: #fce138;
-  flex: 1;
 }
 
 .trainer img {
@@ -284,6 +285,41 @@ section {
   background: #024e76;
 }
 
+.contact h2 {
+  color: #fce138;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-info > * {
+  flex: 1;
+  margin: 15px;
+}
+
+.contact-info iframe {
+  height: 400px;
+}
+
+.contact-info div {
+  color: white;
+}
+
+.contact-info h3 {
+  color: #fce138;
+  font-size: 32px;
+}
+
+.contact-info p, .contact-info address {
+  margin: 20px 0;
+  line-height: 1.5;
+  font-size: 16px;
+  font-style: normal;
+}
+
 .contact-form input, .contact-form textarea {
   border: 1px solid #024e76;
   display: block;
@@ -305,41 +341,6 @@ section {
   font-size: 16px;
 }
 
-.contact-info {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.contact-info > * {
-  flex: 1;
-  margin: 15px;
-}
-
-.contact h2 {
-  color: #fce138;
-}
-
-.contact-info iframe {
-height: 400px;
-}
-
-.contact-info div {
-  color: white;
-}
-
-.contact-info h3 {
-  color: #fce138;
-  font-size: 32px;
-}
-
-.contact-info p, .contact-info address {
-  margin: 20px 0;
-  line-height: 1.5;
-  font-size: 16px;
-  font-style: normal;
-}
-
 .contact-info a {
   color: #fce138;
 }
@@ -358,4 +359,25 @@ height: 400px;
 
 .flex-row {
   display: flex;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header h1 a {
+    /* this will be applied on any screen smaller than 980px */
+    color: tomato;
+  }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+#media screen and (max-width: 768px) {
+  header h1 {
+    /* this will be applied on any screen between 768px and 575 px */
+    font-size: 80px;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 980px) {
+    
 }
